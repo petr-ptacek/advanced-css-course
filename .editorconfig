@@ -1,23 +1,23 @@
 root = true
 
 [*]
-charset = utf-8
-end_of_line = lf
-indent_size = 4
-indent_style = space
-insert_final_newline = false
-max_line_length = 120
-tab_width = 4
+charset                  = utf-8
+end_of_line              = lf
+indent_size              = 2
+indent_style             = space
+insert_final_newline     = false
+max_line_length          = 120
+tab_width                = 2
 trim_trailing_whitespace = true
 
 [*.css]
 indent_size = 2
-tab_width = 2
+tab_width   = 2
 
 [*.scss]
 indent_size = 2
-tab_width = 2
+tab_width   = 2
 
-[{*.cjs,*.js,_lifecycleMethods}]
+[{*.cjs, *.js, _lifecycleMethods}]
 indent_size = 2
-tab_width = 2
+tab_width   = 2
