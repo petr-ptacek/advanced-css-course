@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "live-server ./index.html"
+    "dev": "live-server ./public"
   },
   "dependencies": {
     "live-server": "^1.2.1"
