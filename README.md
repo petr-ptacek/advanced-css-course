@@ -4,7 +4,7 @@ This repo contains starter files and the finished project files for all the proj
 
 Use starter code to start each section, and **final code to compare it with your own code whenever something doesn't work**!
 
-Plus, I made all the [course slides available for download](slides-students-C04.pdf), to make it easier to follow along the theory lectures.
+Plus, I made all the [course slides available for download](docs/slides-students-C04.pdf), to make it easier to follow along the theory lectures.
 
 👇 **_Please read the following Frequently Asked Questions (FAQ) carefully before starting the course_** 👇
 
@@ -16,7 +16,7 @@ Plus, I made all the [course slides available for download](slides-students-C04.
 
 ### Q2: One of the NPM packages is not working (compiling Sass, live-reload, etc). How to fix it?
 
-Unfortunately, this is quite common. I listed some possible fixes [in this document](npm-fixes.md).
+Unfortunately, this is quite common. I listed some possible fixes [in this document](docs/npm-fixes.md).
 
 ### Q3: I'm stuck in one of the projects. Where do I get help?
 
@@ -28,7 +28,7 @@ Unfortunately, this is quite common. I listed some possible fixes [in this docum
 
 ### Q5: What VSCode theme are you using?
 
-**A:** I use Oceanic Next (dimmed bg) for all my coding and course production. [Here is my complete VSCode setup](vscode-setup.md).
+**A:** I use Oceanic Next (dimmed bg) for all my coding and course production. [Here is my complete VSCode setup](docs/vscode-setup.md).
 
 ### Q6: You use codepens in some of the lectures. Where can I find them?
 
