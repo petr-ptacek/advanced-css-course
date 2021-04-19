@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /*font-size: 62.5%;*/
+  font-family: monospace;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f9f7f6;
+}
+
+.container {
+  width: 95vw;
+  margin: 0 auto;
+  background-color: #aaa;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  background-color: lightseagreen;
+}
+
+.examples {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.example--circle {
+  clip-path: circle(50px at 100px 100px);
+}
+
+.example--circle-1 {
+  clip-path: padding-box circle(50px at 100px 100px);
+}
+
+
+.example--polygon {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.example--ellipse {
+  clip-path: ellipse(50px 60px at 0 10%);
+}
