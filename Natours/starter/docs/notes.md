@@ -32,3 +32,12 @@ body {
 }
 
 ```
+
+### Tip: Architecture
+- base/
+- components/
+- layouts/
+- pages/
+- themes/
+- abstracts/
+- vendors/
