@@ -34,15 +34,15 @@ body {
 
 ```
 
-### Tip: Architecture
+### Tip: Architecture of Files
 
-- base/
-- components/
-- layouts/
-- pages/
-- themes/
-- abstracts/
-- vendors/
+- **base/**
+- **components/**
+- **layouts/**
+- **pages/**
+- **themes/**
+- **abstracts/**
+- **vendors/**
 
 ## Sass Features
 
@@ -55,7 +55,10 @@ body {
 - **extends:** to make different selectors inherit declarations that are common to all of them
 - **control directives:** for writing complex code using conditionals and loops
 
-## Npm Sass
+## [Sass](https://sass-lang.com/)
+
+- _Syntactically Awesome Stylesheet_
+
 ```shell
 npm install sass -D
 ```
@@ -66,9 +69,15 @@ sass <input.scss>:<output.css>
 ```
 
 ### Input and Output
-- -s, --style
-  - Output style. [expanded (default), compressed]
-- --[no-]source-map
-- -w --watch
-  - Watch stylesheets and recompile when they change.
 
+- `-s, --style`
+  - Output style. [expanded (default), compressed]
+- `--[no-]source-map`
+- `-w --watch`
+  - Watch stylesheets and recompile when they change.
+- `--update`
+  - Sass will only compile stylesheets whose dependencies have been modified more recently than the corresponding CSS
+    file was generated. It will also print status messages when updating stylesheets.
+- `--color`
+  - his flag (abbreviated -c) tells Sass to emit terminal colors, and the inverse --no-color tells it not to emit
+    colors. By default, it will emit colors if it looks like it’s being run on a terminal that supports them.
