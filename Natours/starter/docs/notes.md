@@ -54,3 +54,21 @@ body {
 - **functions:** similar to mixins, with the difference that they produce a value that can be used
 - **extends:** to make different selectors inherit declarations that are common to all of them
 - **control directives:** for writing complex code using conditionals and loops
+
+## Npm Sass
+```shell
+npm install sass -D
+```
+
+```shell
+sass <input.scss> [output.css]
+sass <input.scss>:<output.css>
+```
+
+### Input and Output
+- -s, --style
+  - Output style. [expanded (default), compressed]
+- --[no-]source-map
+- -w --watch
+  - Watch stylesheets and recompile when they change.
+
