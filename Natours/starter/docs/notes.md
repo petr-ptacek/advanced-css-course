@@ -5,6 +5,7 @@
 - `clip-path`
 - `backface-visibility`
 - `animation`
+- `background-clip`
 
 ## CSS Specificity
 
