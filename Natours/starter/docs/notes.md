@@ -7,6 +7,8 @@
 - `animation`
 - `background-clip`
 - `perspective`
+- `background-blend-mode`
+- `box-decoration-break`
 
 ### `text-shadow` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
 
