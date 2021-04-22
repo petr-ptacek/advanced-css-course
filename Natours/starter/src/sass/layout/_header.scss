@@ -1,5 +1,6 @@
 .header {
-  height: 95vh;
+  /** 6rem = 3rem padding top of the body + 3rem padding of bottom of the body */
+  height: calc(100vh - 2 * #{$body-padding});
   background-image: linear-gradient(to right top, rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)), url("../img/hero.jpg");
   background-size: cover;
