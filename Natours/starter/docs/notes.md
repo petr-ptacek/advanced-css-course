@@ -7,6 +7,26 @@
 - `animation`
 - `background-clip`
 
+### `text-shadow` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+
+- Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.
+
+```css
+.text {
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0);
+}
+```
+
+### `box-shadow` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+
+- A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
+
+```css
+.box {
+  box-shadow: 5px 5px 4px 3px rgba(0, 0, 0, 0);
+}
+```
+
 ## CSS Specificity
 
 1) Inline styles
