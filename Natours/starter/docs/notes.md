@@ -6,6 +6,7 @@
 - `backface-visibility`
 - `animation`
 - `background-clip`
+- `perspective`
 
 ### `text-shadow` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
 
