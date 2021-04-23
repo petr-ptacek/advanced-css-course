@@ -48,6 +48,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: inherit;
+    }
+  }
+
   &--animated {
     animation: moveInBottom 0.5 linear 0.75s;
     //animation-fill-mode: backwards;
