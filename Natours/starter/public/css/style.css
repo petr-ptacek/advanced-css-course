@@ -397,8 +397,7 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 4px;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 6rem 6rem 6rem 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
 }
@@ -507,7 +506,7 @@ body {
 }
 
 .section-stories {
-  padding: 15rem 0;
+  padding: 0 0 15rem;
   background-color: #f7f7f7;
 }
 

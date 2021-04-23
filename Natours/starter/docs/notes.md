@@ -3,14 +3,34 @@
 ## Look at
 
 - `clip-path`
-- `backface-visibility`
 - `animation`
 - `background-clip`
-- `perspective`
-- `background-blend-mode`
-- `box-decoration-break`
 
-### `shape-outside`
+### `backface-visibility` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility)
+
+- sets whether the back face of an element is visible when turned towards the user
+- this property has no effect on 2D transforms, which have no perspective
+
+### `perspective`
+
+- determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective
+- gives an element a 3D-space by affecting the distance between the Z plane and the user
+
+### `perspective-origin` [link](https://css-tricks.com/almanac/properties/p/perspective-origin/)
+
+- has to be defined on the parent element in order to give the transformed children depth
+- property doesn’t do anything by itself. It has to be defined on an element along with `perspective`
+
+### `background-blend-mode` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
+
+- sets how an element's background images should blend with each other and with the element's background color
+- defines how an element’s background-image should blend with its background-color
+
+### `box-decoration-break` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/box-decoration-break)
+
+- specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages
+
+### `shape-outside` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside)
 
 - defines a shape—which may be non-rectangular—around which adjacent inline content should wrap. By default, inline
   content wraps around its margin box; shape-outside provides a way to customize this wrapping, making it possible to
