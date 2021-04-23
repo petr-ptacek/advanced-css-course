@@ -17,12 +17,13 @@
     width: 15rem;
     height: 15rem;
     float: left;
-    background: orangered;
+    margin: 1rem;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: skewX(12deg) translateX(-2rem);
+    transform: skewX(12deg);
+    //translateX(-2rem);
   }
 
   &__img {

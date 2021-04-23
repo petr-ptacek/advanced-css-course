@@ -9,7 +9,12 @@
 - `perspective`
 - `background-blend-mode`
 - `box-decoration-break`
-- `shape-outside`
+
+### `shape-outside`
+
+- defines a shape—which may be non-rectangular—around which adjacent inline content should wrap. By default, inline
+  content wraps around its margin box; shape-outside provides a way to customize this wrapping, making it possible to
+  wrap text around complex objects rather than simple boxes.
 
 ### `text-shadow` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
 
