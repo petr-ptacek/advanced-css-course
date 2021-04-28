@@ -6,6 +6,15 @@
 - `animation`
 - `background-clip`
 
+### `filter` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+
+- property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the
+  rendering of images, backgrounds, and borders
+- are a powerful tool that authors can use to achieve varying visual effects (sort of like Photoshop filters for the
+  browser). The CSS filter property provides access to effects like blur or color shifting on an element’s rendering
+  before the element is displayed. Filters are commonly used to adjust the rendering of an image, a background, or a
+  border.
+
 ### `backface-visibility` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility)
 
 - sets whether the back face of an element is visible when turned towards the user
