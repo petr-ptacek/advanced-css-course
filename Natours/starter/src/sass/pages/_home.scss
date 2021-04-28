@@ -28,6 +28,8 @@
 }
 
 .section-stories {
-  padding: 0 0 15rem;
-  background-color: $color-grey-light;
+  position: relative;
+  padding: 15rem 0 15rem;
+  //background-color: $color-grey-light;
+  background-color: transparent;
 }
