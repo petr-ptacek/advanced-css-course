@@ -5,3 +5,9 @@
     clear: both;
   }
 }
+
+@mixin positionContent($top: 50%, $left: 50%) {
+  transform: translate(-$top, -$left);
+  top: $top;
+  left: $left
+}
