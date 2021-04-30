@@ -2,8 +2,16 @@
   text-align: center;
 }
 
+.u-text-right {
+  text-align: right;
+}
+
 .u-text-justify {
   text-align: justify;
+}
+
+.u-mb-none {
+  margin-bottom: 0 !important;
 }
 
 .u-mb-small {
@@ -32,4 +40,9 @@
 
 .u-mt-huge {
   margin-top: 10rem;
+}
+
+.u-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
