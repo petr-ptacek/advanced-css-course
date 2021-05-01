@@ -655,13 +655,12 @@ body {
   top: 0;
   right: 0;
   z-index: -1001;
-  opacity: 0;
-  transition: opacity 0.4s 0.2s linear;
 }
 .navigation__checkbox {
   display: none;
 }
 .navigation__toggle-button {
+  cursor: pointer;
   background-color: #fff;
   height: 7rem;
   width: 7rem;
@@ -724,6 +723,49 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   z-index: 1001;
   opacity: 1;
+}
+.navigation__icon {
+  position: relative;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc((50% - (0.8rem + 2px))));
+  transition: background-color 0.2s linear;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  height: 2px;
+  background-color: #333;
+  display: inline-block;
+}
+.navigation__icon::before, .navigation__icon::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: top 0.1s linear, transform 0.3s linear;
+}
+.navigation__icon::before {
+  top: -0.8rem;
+}
+.navigation__icon::after {
+  top: 0.8rem;
+}
+.navigation__toggle-button:hover .navigation__icon::before {
+  top: -1rem;
+}
+.navigation__toggle-button:hover .navigation__icon::after {
+  top: 1rem;
+}
+.navigation__checkbox:checked + .navigation__toggle-button .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__toggle-button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation__checkbox:checked + .navigation__toggle-button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .footer {
