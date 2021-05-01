@@ -6,6 +6,9 @@
 - `animation`
 - `background-clip`
 - `radial-gradient`
+- `column-count`
+- `column-rule`
+- `hyphens`
 
 ### `background-size` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
 

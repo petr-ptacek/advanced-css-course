@@ -11,3 +11,8 @@
   top: $top;
   left: $left
 }
+
+@mixin absCenter() {
+  position: absolute;
+  @include positionContent();
+}
