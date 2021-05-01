@@ -10,6 +10,17 @@
     background-image: radial-gradient($color-primary, $color-primary-dark);
     z-index: 1000;
     transition: transform 0.4s linear;
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -36,6 +47,16 @@
     border-radius: 50%;
     z-index: 1002;
     box-shadow: 0 1.5rem 3rem rgba($color-black, .1);
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__list {

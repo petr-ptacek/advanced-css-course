@@ -34,4 +34,8 @@ html {
 body {
   padding: $body-padding;
   box-sizing: border-box;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
