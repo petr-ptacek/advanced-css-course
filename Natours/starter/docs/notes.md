@@ -7,6 +7,11 @@
 - `background-clip`
 - `radial-gradient`
 
+### `background-size` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
+
+- ets the size of the element's background image. The image can be left to its natural size, stretched, or constrained
+  to fit the available space
+
 ### `filter` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
 - property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the

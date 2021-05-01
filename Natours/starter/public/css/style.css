@@ -681,6 +681,7 @@ body {
   margin: 1rem;
 }
 .navigation__link:link, .navigation__link:visited {
+  position: relative;
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -688,18 +689,31 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 250%;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
+  overflow: hidden;
 }
 .navigation__link:link span, .navigation__link:visited span {
   margin-right: 1rem;
   display: inline-block;
 }
+.navigation__link::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transform: translateX(101%);
+  clip-path: polygon(5rem 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #fff;
+  transition: transform 0.4s linear;
+}
 .navigation__link:hover, .navigation__link:active {
-  background-position: 100%;
   color: #55c57a;
-  transform: translateX(1rem);
+}
+.navigation__link:hover::after, .navigation__link:active::after {
+  transform: translateX(0);
 }
 
 .footer {

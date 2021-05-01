@@ -51,6 +51,7 @@
   &__link {
     &:link,
     &:visited {
+      position: relative;
       display: inline-block;
       font-size: 3rem;
       font-weight: 300;
@@ -58,9 +59,8 @@
       color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
-      background: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-      background-size: 250%;
-      transition: all 0.3s linear;
+      transition: all 0.4s linear;
+      overflow: hidden;
 
       span {
         margin-right: 1rem;
@@ -68,11 +68,27 @@
       }
     }
 
+    &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      transform: translateX(101%);
+      clip-path: polygon(5rem 0, 100% 0, 100% 100%, 0 100%);
+      background-color: $color-white;
+      transition: transform 0.4s linear;
+    }
+
     &:hover,
     &:active {
-      background-position: 100%;
       color: $color-primary;
-      transform: translateX(1rem);
+
+      &::after {
+        transform: translateX(0);
+      }
     }
 
   }
