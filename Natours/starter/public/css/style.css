@@ -646,7 +646,17 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#55c57a, #28b485);
   z-index: 1000;
-  transform: scale(100);
+  transition: transform 0.4s linear;
+}
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1001;
+  opacity: 0;
+  transition: opacity 0.4s 0.2s linear;
 }
 .navigation__checkbox {
   display: none;
@@ -659,15 +669,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 1001;
-}
-.navigation__nav {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1001;
+  z-index: 1002;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
 }
 .navigation__list {
   position: absolute;
@@ -714,6 +717,13 @@ body {
 }
 .navigation__link:hover::after, .navigation__link:active::after {
   transform: translateX(0);
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(100);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  z-index: 1001;
+  opacity: 1;
 }
 
 .footer {
