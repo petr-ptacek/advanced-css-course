@@ -149,7 +149,8 @@
     transform: rotateY(0);
   }
 
-  @include respond(tab-port) {
+  @media screen and (max-width: 56.25em),
+  screen and (hover: none) {
     height: auto;
     border-radius: 4px;
     background-color: $color-white;
