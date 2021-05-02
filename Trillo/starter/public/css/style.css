@@ -57,11 +57,66 @@ body {
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
-.search__icon {
-  height: 2rem;
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search__input-wrapper {
+  position: relative;
+  width: 90%;
+  transition: all 0.3s linear;
+}
+.search__input-wrapper:focus-within {
+  width: 100%;
+}
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: var(--color-grey-light-2);
+  border: none;
+  padding: 0.7rem 4rem 0.7rem 2rem;
+  border-radius: 100px;
+  width: 100%;
+}
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--color-grey-light-4);
+}
+.search__input:focus {
+  outline: none;
+  background-color: var(--color-grey-light-3);
+}
+.search__input:focus + .search__button {
+  background-color: var(--color-grey-light-3);
+}
+.search__button {
+  border: none;
   width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-grey-light-2);
+  transition: all 0.3s linear;
+}
+.search__button:focus {
+  outline: none;
+}
+.search__button:active {
+  transform: translateY(calc(-50% + 2px));
+}
+.search__icon {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  fill: var(--color-grey-dark-3);
 }
 
 .user-nav__icon {
@@ -75,9 +130,13 @@ body {
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: var(--color-white);
   border-bottom: var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sidebar {
