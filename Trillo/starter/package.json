@@ -1,6 +1,7 @@
 {
   "name": "trillo",
   "private": true,
+  "description": "trillo app",
   "scripts": {
     "postcss:compile": "postcss public/css/style.css --replace --verbose --config ./postcss.config.js",
     "postcss:watch": "npm run postcss:compile -- --watch",
