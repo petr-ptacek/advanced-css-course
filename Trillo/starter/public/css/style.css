@@ -1,4 +1,6 @@
 :root {
+  --color-white: #fff;
+  --color-black: #000;
   --color-primary: #eb2f64;
   --color-primary-light: #f36;
   --color-primary-dark: #ba265d;
@@ -9,6 +11,10 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+}
+
+:root {
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 
 *,
@@ -39,6 +45,34 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-1);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--color-grey-light-2);
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.content {
+  display: flex;
+}
+
+.hotel-view {
+  background-color: var(--color-white);
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

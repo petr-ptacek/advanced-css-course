@@ -1,4 +1,13 @@
 @import "variables/colors";
+@import "variables/shadows";
 
 @import "base/base";
 @import "base/typography";
+
+@import "components/container";
+
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/content";
+
+@import "pages/home";

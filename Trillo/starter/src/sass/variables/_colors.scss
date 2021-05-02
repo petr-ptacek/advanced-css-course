@@ -1,3 +1,6 @@
+$color-white: #fff;
+$color-black: #000;
+
 $color-primary: #eb2f64;
 $color-primary-light: #f36;
 $color-primary-dark: #ba265d;
@@ -12,6 +15,9 @@ $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 
 :root {
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+
   --color-primary: #{$color-primary};
   --color-primary-light: #{$color-primary-light};
   --color-primary-dark: #{$color-primary-dark};
