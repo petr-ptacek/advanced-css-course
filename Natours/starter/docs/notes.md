@@ -9,6 +9,8 @@
 - `column-count`
 - `column-rule`
 - `hyphens`
+- `srcset`
+- `picture`
 
 ### `background-size` [link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
 
