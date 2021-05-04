@@ -4,6 +4,8 @@
 @import "base/base";
 @import "base/typography";
 
+@import "abstract/animations";
+
 @import "components/container";
 @import "components/logo";
 @import "components/search";
@@ -12,6 +14,7 @@
 @import "components/legal";
 @import "components/gallery";
 @import "components/overview";
+@import "components/btn-inline";
 
 @import "layout/header";
 @import "layout/sidebar";
