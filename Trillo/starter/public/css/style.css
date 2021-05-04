@@ -166,6 +166,18 @@ body {
   border-radius: 50%;
 }
 
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-grey-light-4);
+}
+
 .header {
   font-size: 1.4rem;
   height: 7rem;
@@ -179,6 +191,9 @@ body {
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content {
@@ -186,8 +201,9 @@ body {
 }
 
 .hotel-view {
-  background-color: var(--color-white);
   flex: 1;
+  background-color: orangered;
+  height: 80rem;
 }
 
 /*# sourceMappingURL=style.css.map */
