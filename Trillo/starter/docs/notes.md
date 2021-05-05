@@ -1,6 +1,7 @@
 ## Look at
 
 `currentColor`
+`masks`
 
 ## SVG Icons
 
