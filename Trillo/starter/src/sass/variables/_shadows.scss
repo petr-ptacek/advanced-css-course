@@ -1,5 +1,4 @@
-$shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
-
 :root {
-  --shadow-dark: #{$shadow-dark};
+  --shadow-dark: 0 2rem 6rem #{rgba($color-black, 0.3)};
+  --shadow-light: 0 0rem 50rem #{rgba($color-black, 0.02)};
 }

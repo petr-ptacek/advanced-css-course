@@ -1,5 +1,6 @@
 @import "variables/colors";
 @import "variables/shadows";
+@import "variables/borders";
 
 @import "base/base";
 @import "base/typography";
@@ -19,5 +20,8 @@
 @import "layout/header";
 @import "layout/sidebar";
 @import "layout/content";
+@import "layout/detail";
+@import "layout/description";
+@import "layout/user-reviews";
 
 @import "pages/home";
