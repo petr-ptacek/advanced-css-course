@@ -8,10 +8,20 @@
   cursor: pointer;
   transition: all 0.2s linear;
 
+  &__icon {
+    display: inline-block;
+    margin-left: 3px;
+    transition: margin-left 0.3s ease-in;
+  }
+
   &:hover,
   &:focus {
     color: var(--color-grey-dark-1);
     animation: pulsate 1s infinite;
+
+    .btn-inline__icon {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
