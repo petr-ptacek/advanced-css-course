@@ -4,4 +4,9 @@
   margin-right: 3.5rem;
   box-shadow: var(--shadow-light);
   padding: 3rem;
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }

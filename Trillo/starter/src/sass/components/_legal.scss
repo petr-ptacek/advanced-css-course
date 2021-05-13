@@ -3,4 +3,8 @@
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-light-4);
+
+  @media screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }

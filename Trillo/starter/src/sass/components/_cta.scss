@@ -8,4 +8,8 @@
     font-weight: 300;
     margin-bottom: 2.5rem;
   }
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
 }

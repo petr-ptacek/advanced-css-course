@@ -4,4 +4,9 @@
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
+
+  @media screen and (max-width: $bp-largest) {
+    margin: 0;
+    width: 100%;
+  }
 }

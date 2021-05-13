@@ -51,4 +51,20 @@
     margin-right: 2rem;
     fill: currentColor;
   }
+
+  @media screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+
+    .side-nav__item {
+      margin: 0;
+      flex: 1;
+    }
+
+    .side-nav__link:link,
+    .side-nav__link:visited {
+      justify-content: center;
+      padding: 2rem;
+    }
+  }
 }
