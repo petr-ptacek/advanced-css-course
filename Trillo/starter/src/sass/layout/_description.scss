@@ -9,4 +9,9 @@
     padding: 2rem;
     margin-right: 3rem;
   }
+
+  @media screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }

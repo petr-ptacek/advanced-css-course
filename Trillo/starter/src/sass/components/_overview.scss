@@ -54,4 +54,23 @@
     font-size: .8rem;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: $bp-small) {
+    .overview__heading {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
+
+    .overview__rating {
+      padding: 0 1.5rem;
+    }
+
+    .overview__rating-average {
+      font-size: 1.8rem;
+    }
+
+    .overview__rating-count {
+      font-size: 0.5rem;
+    }
+  }
 }

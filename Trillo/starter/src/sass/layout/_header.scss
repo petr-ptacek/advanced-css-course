@@ -7,4 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    height: 12rem;
+    align-content: space-around;
+  }
 }
