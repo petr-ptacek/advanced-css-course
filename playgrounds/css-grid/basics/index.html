@@ -12,13 +12,51 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="item item--1">1:&nbsp;Orange</div>
-    <div class="item item--2">2:&nbsp;Green</div>
-    <div class="item item--3">3:&nbsp;Violet</div>
-    <div class="item item--4">4:&nbsp;Pink</div>
-    <div class="item item--5">5:&nbsp;Blue</div>
-    <div class="item item--6">6:&nbsp;Brown</div>
+  <div class="buttons">
+    <button id="add-item">Add Item</button>
   </div>
+  <div class="container">
+<!--    <div class="item item&#45;&#45;1">1:&nbsp;Orange</div>-->
+<!--    <div class="item item&#45;&#45;2">2:&nbsp;Green</div>-->
+<!--    <div class="item item&#45;&#45;3">3:&nbsp;Violet</div>-->
+<!--    <div class="item item&#45;&#45;4">4:&nbsp;Pink</div>-->
+<!--    <div class="item item&#45;&#45;5">5:&nbsp;Blue</div>-->
+<!--    <div class="item item&#45;&#45;6">6:&nbsp;Brown</div>-->
+  </div>
+
+  <script>
+    const addBtn = document.getElementById('add-item');
+    const containerEl = document.querySelector('.container');
+
+    function randomNumber(from, to) {
+      return Math.floor(Math.random() * (to - from + 1)) + from;
+    }
+
+    function randomColor() {
+      const r = randomNumber(0, 255);
+      const g = randomNumber(0, 255);
+      const b = randomNumber(0, 255);
+
+      return `rgb(${ r },${ g },${ b })`;
+    }
+
+    function addItem() {
+      const item = document.createElement('div');
+      const nth = containerEl.childElementCount + 1;
+
+      item.innerHTML = `${ nth }:&nbsp;Item`;
+
+      item.classList.add('item');
+      item.classList.add(`item--${ nth }`);
+
+      item.style.backgroundColor = randomColor();
+      item.style.gridColumn = `span ${ randomNumber(1, 2) }`;
+      item.style.gridRow = `span ${ randomNumber(1, 2) }`;
+
+      containerEl.appendChild(item);
+    }
+
+    addBtn.addEventListener('click', addItem);
+  </script>
 </body>
 </html>
