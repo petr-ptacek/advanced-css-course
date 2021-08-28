@@ -2,14 +2,13 @@
   "private": true,
   "scripts": {
     "postcss": "postcss public/css/style.css --replace",
-    "presass": "npm run sass:clear",
     "sass": "sass src/main.scss public/css/style.css",
     "sass:clear": "rimraf public/css",
     "sass:build": "npm run sass -- --style=compressed --no-source-map",
     "sass:watch": "npm run sass -- --watch --source-map --color",
     "server": "live-server ./public --watch=.,css",
-    "dev": "npm-run-all --parallel \"sass:watch\" \"server\"",
-    "build": "npm-run-all --serial \"sass:build\" \"postcss\""
+    "dev": "npm-run-all \"sass:clear\" \"sass:build\" -p \"sass:watch\" \"server\"",
+    "build": "npm-run-all -s \"sass:clear\" \"sass:build\" \"postcss\""
   },
   "dependencies": {
     "autoprefixer": "^10.3.3",
